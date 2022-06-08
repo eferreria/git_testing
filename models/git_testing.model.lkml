@@ -1,3 +1,3 @@
 connection: "ef-bq"
 
-# testing
+# testing #2, again for auto-merge
