@@ -1,9 +1,7 @@
 view: order_items {
-  sql_table_name: `looker-private-demo.ecomm.order_items`
-    ;;
-  drill_fields: [pk_id]
+  sql_table_name: `looker-private-demo.ecomm.order_items` ;;
 
-  dimension: pk_id {
+  dimension: pk1_id {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
@@ -95,6 +93,10 @@ view: order_items {
 
   measure: count {
     type: count
-    drill_fields: [pk_id]
+    drill_fields: [pk1_id]
+    # LAMS
+    # rule_exemptions: {
+    #  F3: "2022-06-13: Demo"
+    # }
   }
 }
