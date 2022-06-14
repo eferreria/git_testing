@@ -1,9 +1,9 @@
 view: order_items {
   sql_table_name: `looker-private-demo.ecomm.order_items`
     ;;
-  drill_fields: [id]
+  drill_fields: [pk_id]
 
-  dimension: id {
+  dimension: pk_id {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
@@ -95,6 +95,6 @@ view: order_items {
 
   measure: count {
     type: count
-    drill_fields: [id]
+    drill_fields: [pk_id]
   }
 }
