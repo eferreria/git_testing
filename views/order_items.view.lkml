@@ -81,6 +81,7 @@ view: order_items {
   }
 
   dimension: status {
+    description: "Status of the order item"
     type: string
     sql: ${TABLE}.status ;;
   }
