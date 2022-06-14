@@ -4,7 +4,7 @@ view: order_items {
   drill_fields: [id]
 
   dimension: id {
-    # primary_key: yes
+    primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
   }
@@ -88,6 +88,7 @@ view: order_items {
   }
 
   dimension: user_id {
+    description: "Unique ID for User, joins with User Table"
     type: number
     sql: ${TABLE}.user_id ;;
   }
